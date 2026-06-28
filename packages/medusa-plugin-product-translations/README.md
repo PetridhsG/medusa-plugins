@@ -29,7 +29,7 @@ Stores locale-aware translations for products, variants, options, option values,
 ## Installation
 
 ```bash
-npm install @petridhsg/medusa-plugin-product-translations
+pnpm add @petridhsg/medusa-plugin-product-translations
 # or
 pnpm add @petridhsg/medusa-plugin-product-translations
 ```

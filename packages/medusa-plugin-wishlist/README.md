@@ -27,7 +27,7 @@ Adds a per-customer wishlist backed by a `wishlist_item` table with a unique con
 ## Installation
 
 ```bash
-npm install @petridhsg/medusa-plugin-wishlist
+pnpm add @petridhsg/medusa-plugin-wishlist
 # or
 pnpm add @petridhsg/medusa-plugin-wishlist
 ```

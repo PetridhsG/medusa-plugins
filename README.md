@@ -61,10 +61,10 @@ Database-backed [Handlebars](https://handlebarsjs.com) email templates with plug
 Each plugin is a standalone npm package. Install only the ones you need:
 
 ```bash
-npm install @petridhsg/medusa-plugin-product-translations
-npm install @petridhsg/medusa-plugin-wishlist
-npm install @petridhsg/medusa-plugin-analytics
-npm install @petridhsg/medusa-plugin-email-templates resend      # or nodemailer for SMTP
+pnpm add @petridhsg/medusa-plugin-product-translations
+pnpm add @petridhsg/medusa-plugin-wishlist
+pnpm add @petridhsg/medusa-plugin-analytics
+pnpm add @petridhsg/medusa-plugin-email-templates resend      # or nodemailer for SMTP
 ```
 
 Then register the modules in your `medusa-config.ts` and run `npx medusa db:migrate`. See each plugin's README for the full setup guide.
@@ -92,4 +92,4 @@ pnpm build         # build all plugins
 
 ## License
 
-MIT © [Giannis Petridakos](https://github.com/PetridhsG)
+MIT © [Giannis Petridis](https://github.com/PetridhsG)

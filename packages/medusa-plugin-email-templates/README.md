@@ -21,9 +21,9 @@ Database-backed Handlebars email templates for **Medusa v2** with pluggable deli
 ## Installation
 
 ```bash
-npm install @petridhsg/medusa-plugin-email-templates resend       # Resend provider
+pnpm add @petridhsg/medusa-plugin-email-templates resend       # Resend provider
 # or
-npm install @petridhsg/medusa-plugin-email-templates nodemailer   # SMTP provider
+pnpm add @petridhsg/medusa-plugin-email-templates nodemailer   # SMTP provider
 ```
 
 ---

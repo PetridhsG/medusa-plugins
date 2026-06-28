@@ -33,7 +33,7 @@ Tracks daily revenue, top products, and customer stats in three lightweight tabl
 ## Installation
 
 ```bash
-npm install @petridhsg/medusa-plugin-analytics
+pnpm add @petridhsg/medusa-plugin-analytics
 # or
 pnpm add @petridhsg/medusa-plugin-analytics
 ```
