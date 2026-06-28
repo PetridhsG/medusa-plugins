@@ -1,0 +1,5 @@
+packages:
+  - "packages/*"
+allowBuilds:
+  '@medusajs/telemetry': true
+  protobufjs: true

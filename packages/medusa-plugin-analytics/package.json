@@ -1,0 +1,52 @@
+{
+  "name": "@petridhsg/medusa-plugin-analytics",
+  "version": "1.0.0",
+  "description": "Pre-aggregated order analytics for Medusa v2. Tracks daily, product, and customer stats and exposes a full admin dashboard API — no raw SQL required.",
+  "author": {
+    "name": "Giannis Petridakos",
+    "email": "giannispetridakos@gmail.com",
+    "url": "https://github.com/PetridhsG"
+  },
+  "license": "MIT",
+  "keywords": [
+    "medusa",
+    "medusa-plugin",
+    "analytics",
+    "dashboard",
+    "reporting",
+    "medusa-v2",
+    "ecommerce"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PetridhsG/medusa-plugins",
+    "directory": "packages/medusa-plugin-analytics"
+  },
+  "homepage": "https://github.com/PetridhsG/medusa-plugins/tree/main/packages/medusa-plugin-analytics",
+  "bugs": {
+    "url": "https://github.com/PetridhsG/medusa-plugins/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "pnpm build"
+  },
+  "peerDependencies": {
+    "@medusajs/framework": ">=2.14.0"
+  },
+  "devDependencies": {
+    "@medusajs/framework": "2.14.2",
+    "@types/node": "^20.12.11",
+    "typescript": "^5.6.2"
+  }
+}

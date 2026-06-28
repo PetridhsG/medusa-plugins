@@ -1,0 +1,60 @@
+{
+  "name": "@petridhsg/medusa-plugin-email-templates",
+  "version": "1.0.0",
+  "description": "DB-backed Handlebars email templates for Medusa v2 with pluggable delivery providers (Resend, SMTP/Postmark/SendGrid).",
+  "author": {
+    "name": "Giannis Petridakos",
+    "email": "giannispetridakos@gmail.com",
+    "url": "https://github.com/PetridhsG"
+  },
+  "license": "MIT",
+  "keywords": [
+    "medusa",
+    "medusa-plugin",
+    "email",
+    "transactional-email",
+    "handlebars",
+    "resend",
+    "smtp",
+    "templates",
+    "medusa-v2"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PetridhsG/medusa-plugins",
+    "directory": "packages/medusa-plugin-email-templates"
+  },
+  "homepage": "https://github.com/PetridhsG/medusa-plugins/tree/main/packages/medusa-plugin-email-templates",
+  "bugs": {
+    "url": "https://github.com/PetridhsG/medusa-plugins/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.9",
+    "nodemailer": "^6.9.16",
+    "resend": "^6.12.3"
+  },
+  "peerDependencies": {
+    "@medusajs/framework": ">=2.14.0"
+  },
+  "devDependencies": {
+    "@medusajs/framework": "2.14.2",
+    "@types/node": "^20.12.11",
+    "@types/nodemailer": "^6.4.17",
+    "typescript": "^5.6.2"
+  }
+}

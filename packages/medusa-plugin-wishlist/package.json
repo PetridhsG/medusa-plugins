@@ -1,0 +1,50 @@
+{
+  "name": "@petridhsg/medusa-plugin-wishlist",
+  "version": "1.0.0",
+  "description": "Customer product wishlist for Medusa v2. Adds a per-customer wishlist with store and admin API routes.",
+  "author": {
+    "name": "Giannis Petridakos",
+    "email": "giannispetridakos@gmail.com",
+    "url": "https://github.com/PetridhsG"
+  },
+  "license": "MIT",
+  "keywords": [
+    "medusa",
+    "medusa-plugin",
+    "wishlist",
+    "medusa-v2",
+    "ecommerce"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PetridhsG/medusa-plugins",
+    "directory": "packages/medusa-plugin-wishlist"
+  },
+  "homepage": "https://github.com/PetridhsG/medusa-plugins/tree/main/packages/medusa-plugin-wishlist",
+  "bugs": {
+    "url": "https://github.com/PetridhsG/medusa-plugins/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "pnpm build"
+  },
+  "peerDependencies": {
+    "@medusajs/framework": ">=2.14.0"
+  },
+  "devDependencies": {
+    "@medusajs/framework": "2.14.2",
+    "@types/node": "^20.12.11",
+    "typescript": "^5.6.2"
+  }
+}
